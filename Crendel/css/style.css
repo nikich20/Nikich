@@ -1,0 +1,358 @@
+/* Сброс стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+background: url(../images/head_BG.jpg) no-repeat center;
+background-size: cover;
+background-attachment: fixed;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+:focus {
+outline: 0;
+}
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+/* Стили шапки */
+header {
+    height: 100vh;
+    background: url(../images/body_BG.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background: rgba(71, 32, 9, 0.7);
+    padding: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+nav a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #00FF00;
+}
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+}
+nav a:hover {
+    text-shadow: 0 0 15px #fff;
+}
+.logan {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 1.8em;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 40%;
+}
+.logan p:nth-child(1) {
+    font-family: lobster;
+    text-align: center;
+    padding: 30px;
+}
+.logan span {
+    font-size: 1.4em;
+    
+}
+.logan p:nth-child(2) {
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+}
+nav img {
+    width: 80px;
+}
+
+section {
+    color: #fff;
+}
+.white {
+    background: #fff;
+    color: rgb(63, 41, 20);
+}
+/* реклама */
+#info {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(170, 124, 67);
+    font-family: Verdana;
+    padding: 80px ;
+}
+#coffee {
+    width: 250px;
+    float: right;
+}
+section h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    padding: 40px 0;
+    
+}
+/* стили карточек */
+#About_us {
+    text-align: center;
+
+}
+.card {
+    width: 25%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-table;
+    margin: 20px;
+    height: 400px;
+}
+.card-header {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.card-text {
+    font-size: 1.2em;
+}
+section h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+    padding: 40px 0;
+}
+#menu {
+    text-align: center;
+}
+.menu {
+    background-color: #fff;
+    width: 45%;
+    text-align: center;
+    padding: 30px;
+    font-family: Verdana;
+    display: inline-block;
+    margin-top: 40px;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 5px;
+    margin: 0 5px;
+
+}
+/* карточки меню */
+.ccimg>img {
+    width: 250px; 
+}
+.ccimg {
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    
+}
+
+.coffee-card {
+    border: 2px solid rgb(39, 25, 0);
+    color: rgb(39, 25, 0);
+    display: inline-table;
+    width: 25%;
+    margin: 40px;
+    height: 500px;
+}
+.cct {
+    background: rgb(39, 25, 0);
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+.ccd {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 10px;
+}
+.ccf {
+    text-align: center;
+    font-weight: bold;
+}
+.ccf input {
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid rgb(39, 25, 0);
+    border-radius: 20px;
+}
+.ccd button {
+    width: 80%;
+    padding: 10px;
+    color: rgb(39, 25, 0);
+    font-weight: bold;
+    background-color: rgb(134, 136, 4);
+    border: none;
+}
+.ccd button:hover {
+    background-color: rgb(90, 92, 2);
+}
+/* предложения дня */
+.taod {
+    background-color: rgb(255, 255, 254);
+    text-align: center;
+    color: rgb(3, 3, 3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 35px;
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+
+}
+h5 {
+    font-size: 50px;  
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+
+}
+.bb {
+    width: 22%;
+    font-size: 1.3em;
+}
+.pic {
+    margin: 0 30px;
+    background: url(../Images/cruasan.jpg) no-repeat center;
+    background-size: contain;
+    border: 2px solid rgb(7, 7, 7);
+}
+/* отзывы */
+.person .p-photo img {
+    width: 150px;
+    clip-path: circle(50px);
+}
+.wrab-reviews {
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    padding: 30px;
+}
+.person {
+    width: 20%;
+}
+h6 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+}
+.p-tittle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.p-photo {
+    text-align: center;
+}
+.con {
+    display: flex;
+    color: rgb(10, 10, 10);
+    font-size: 2em;
+    background: #fff;
+    padding: 30px;
+}
+.place {
+    padding: 0px 50px;
+}
+.soc a {
+    color: black;
+    text-decoration: none;
+}
+.soc a:hover{
+    color: rgb(68, 68, 68);
+}
+.wrab {
+    width: 70%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrab label {
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+}
+.wrab input {
+    width: 55%;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.wrab p {
+    margin: 10px;
+}
+.order-button {
+    font-size: 1.5em;
+    background:linear-gradient(45deg,rgb(117, 209, 26),#00FF00);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+}   
+.wrab p:nth-child(4) {
+    text-align: right;
+}
+@media (max-width: 600px) {
+    header{
+        font-size: 0.5em;
+        
+
+    }
+    header nav {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+    
+  }
+
+  
